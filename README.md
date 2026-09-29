@@ -1,42 +1,33 @@
-# Pagani
+# Pagani Utopia — product showcase
 
-A Next.js 15 (App Router) website built with React 18, TypeScript,
-Tailwind CSS, Radix UI and GSAP.
+A scroll-driven product page for the Pagani Utopia: splash sequence, narrative panels, a 3D model viewer, and a configurator.
 
-## Requirements
+**Live:** https://paganiscroll.vercel.app · Next.js · TypeScript
 
-- Node.js 18.18+ (Node 20 LTS recommended)
-- npm 9+
+---
 
-## Getting started
+## What it is
+
+An exercise in the kind of page a luxury manufacturer actually ships — where the product reveals itself as you scroll rather than sitting in a grid of specifications.
+
+- **Splash screen** into the reveal, so the first frame is composed rather than half-loaded
+- **Story panels** that advance with scroll position
+- **Model viewer** for rotating the car
+- **Configure** and **Discover** routes for specification and detail
+
+## Build
+
+Next.js App Router with TypeScript. UI is built from **Radix UI primitives** — accessible behaviour without inheriting a component library's visual opinions, which matters when the whole point is a bespoke look. Forms use React Hook Form with Zod resolvers.
+
+## Running locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open http://localhost:9002
+---
 
-## Scripts
+An independent design exercise. Pagani is not affiliated with this project and all marks belong to them.
 
-- `npm run dev`       — start the dev server (Turbopack) on port 9002
-- `npm run build`     — production build
-- `npm run start`     — serve the production build
-- `npm run lint`      — run Next.js lint
-- `npm run typecheck` — run the TypeScript compiler with no emit
-
-## Project structure
-
-```
-src/
-  app/         App Router pages and layout
-  components/  UI and section components
-  hooks/       custom React hooks
-  lib/         data and utilities
-```
-
-## Notes
-
-Exported from Firebase Studio. The Firebase Studio / Project IDX scaffolding
-has been removed, along with the unused Genkit AI and Firebase SDK code, so
-the project installs and runs as a plain Next.js app.
+Built by [Jeremy Ahamioje](https://github.com/JeremyAhamioje).
